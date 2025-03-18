@@ -1,0 +1,163 @@
+.nutrient-jar-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  text-align: center;
+}
+
+.nutrient-jar-container h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.jar-description {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.jar {
+  position: relative;
+  width: 160px;
+  height: 240px;
+  margin: 0 auto 30px;
+}
+
+.jar-lid {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 20px;
+  background-color: #555;
+  border-radius: 10px 10px 0 0;
+  z-index: 2;
+}
+
+.jar-glass {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 220px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 3px solid #ddd;
+  border-radius: 20px 20px 70px 70px / 20px 20px 40px 40px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.jar-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 0 0 70px 70px / 0 0 20px 20px;
+}
+
+.nutrient-layer {
+  width: 100%;
+  transition: height 0.5s ease-in-out;
+}
+
+.nutrient-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.legend-color {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+
+.legend-text {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.legend-label {
+  font-weight: bold;
+  color: #333;
+}
+
+.legend-value {
+  color: #666;
+}
+
+/* Add some glass-like effects */
+.jar-glass::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 20px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.jar-glass::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 10px;
+  width: 10px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Add measurement lines to the jar */
+.jar-glass {
+  background-image: 
+    linear-gradient(
+      to bottom,
+      transparent 0%,
+      transparent 24%,
+      #ddd 24%,
+      #ddd 25%,
+      transparent 25%,
+      transparent 49%,
+      #ddd 49%,
+      #ddd 50%,
+      transparent 50%,
+      transparent 74%,
+      #ddd 74%,
+      #ddd 75%,
+      transparent 75%,
+      transparent 100%
+    );
+}
+
+@media (max-width: 768px) {
+  .nutrient-jar-container {
+    margin-top: 20px;
+  }
+  
+  .jar {
+    width: 140px;
+    height: 210px;
+  }
+  
+  .jar-glass {
+    height: 190px;
+  }
+}
