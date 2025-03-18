@@ -1,0 +1,101 @@
+# Fruitfy - Fruit E-commerce App
+
+A React-based application for browsing and purchasing fresh fruits online with a clean, responsive UI and dark/light mode support.
+
+![Fruitfy App](https://via.placeholder.com/800x400?text=Fruitfy+App)
+
+## Features
+
+- Browse a variety of fresh fruits with filtering options
+- View detailed product information and nutrition facts
+- Add products to cart with quantity selection
+- Light and dark mode support
+- Responsive design for mobile and desktop
+- Local storage for cart persistence
+
+## Demo
+
+[Live Demo](https://fruitfy.vercel.app) (Coming soon)
+
+## Getting Started
+
+These instructions will help you set up and run the project on your local machine.
+
+### Prerequisites
+
+- Node.js (v14.0.0 or later)
+- npm (v6.0.0 or later)
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/your-username/fruitfy.git
+cd fruitfy
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
+npm start
+```
+
+4. Open your browser and navigate to:
+```
+http://localhost:3000
+```
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.
+
+## Deployment
+
+This project is configured for easy deployment to Vercel. See [VERCEL_DEPLOYMENT.md](VERCEL_DEPLOYMENT.md) for detailed instructions.
+
+## Project Structure
+
+```
+fruitfy/
+├── public/                 # Public assets
+├── src/                    # Source files
+│   ├── components/         # Reusable components
+│   ├── context/            # Context providers (theme)
+│   ├── pages/              # Page components
+│   ├── data/               # Data files
+│   ├── App.js              # Main App component
+│   ├── App.css             # App styles
+│   ├── index.js            # Entry point
+│   └── index.css           # Global styles
+├── package.json            # Dependencies and scripts
+├── vercel.json             # Vercel configuration
+└── README.md               # Project documentation
+```
+
+## Built With
+
+* [React](https://reactjs.org/) - The web framework used
+* [React Router](https://reactrouter.com/) - For routing
+* [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS) - For styling
+* [Vercel](https://vercel.com/) - For deployment
+
+## License
+
+This project is licensed under the MIT License
